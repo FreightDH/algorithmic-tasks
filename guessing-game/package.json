@@ -1,0 +1,19 @@
+{
+  "name": "guessing-game",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "mocha -r ./test/setup-mocha.js",
+    "start": "webpack-dev-server"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "<=14"
+  },
+  "devDependencies": {
+    "mocha": "^3.0.2",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
+}

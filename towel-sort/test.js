@@ -2,8 +2,7 @@ const assert = require('assert');
 
 const towelSort = require('./src/index.js');
 
-describe('.towelSort, should perfrom \'towelSort\'', () => {
-
+describe(".towelSort, should perfrom 'towelSort'", () => {
   it('Should return empty array if no params passed', () => {
     assert.deepEqual(towelSort(), []);
   });
@@ -18,7 +17,7 @@ describe('.towelSort, should perfrom \'towelSort\'', () => {
       [3, 4],
     ];
 
-    assert.deepEqual(towelSort(matrix), [ 1, 2, 4, 3 ]);
+    assert.deepEqual(towelSort(matrix), [1, 2, 4, 3]);
   });
 
   it('should do towelSort', () => {
@@ -28,28 +27,28 @@ describe('.towelSort, should perfrom \'towelSort\'', () => {
       [7, 8, 9],
     ];
 
-    assert.deepEqual(towelSort(matrix), [ 1, 2, 3, 6, 5, 4, 7, 8, 9 ]);
+    assert.deepEqual(towelSort(matrix), [1, 2, 3, 6, 5, 4, 7, 8, 9]);
   });
 
   it('should do towelSort', () => {
     const matrix = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
-        [13, 14, 15, 16],
+      [1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12],
+      [13, 14, 15, 16],
     ];
 
-    assert.deepEqual(towelSort(matrix), [ 1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12, 16, 15, 14, 13 ]);
+    assert.deepEqual(towelSort(matrix), [1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12, 16, 15, 14, 13]);
   });
 
   it('should do towelSort correctrly with nonsquare matrix', () => {
     const matrix = [
-        [1, 2, 3, 4],
-        [5, 6, 7, 8],
-        [9, 10, 11, 12],
+      [1, 2, 3, 4],
+      [5, 6, 7, 8],
+      [9, 10, 11, 12],
     ];
 
-    assert.deepEqual(towelSort(matrix), [ 1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12,]);
+    assert.deepEqual(towelSort(matrix), [1, 2, 3, 4, 8, 7, 6, 5, 9, 10, 11, 12]);
   });
 
   it('should do towelSort', () => {
@@ -58,17 +57,16 @@ describe('.towelSort, should perfrom \'towelSort\'', () => {
       [4, 5, 6],
     ];
 
-    assert.deepEqual(towelSort(matrix), [ 1, 2, 3, 6, 5, 4, ]);
+    assert.deepEqual(towelSort(matrix), [1, 2, 3, 6, 5, 4]);
   });
 
   it('should do towelSort', () => {
     const matrix = [
-        [1, 2, 4],
-        [5, 6, 7, 8],
-        [9, 12],
+      [1, 2, 4],
+      [5, 6, 7, 8],
+      [9, 12],
     ];
 
-    assert.deepEqual(towelSort(matrix), [ 1, 2, 4, 8, 7, 6, 5, 9, 12 ]);
+    assert.deepEqual(towelSort(matrix), [1, 2, 4, 8, 7, 6, 5, 9, 12]);
   });
-
 });

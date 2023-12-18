@@ -15,10 +15,14 @@ const { NotImplementedError } = require('../extensions/index.js');
  *
  */
 function isMAC48Address(n) {
-	const ALPHABET = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
+  const ALPHABET = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', 'A', 'B', 'C', 'D', 'E', 'F'];
 
-	return n.split('-').join('').split('').every(element => ALPHABET.includes(element));
+  return n
+    .split('-')
+    .join('')
+    .split('')
+    .every((element) => ALPHABET.includes(element));
 }
 module.exports = {
-  isMAC48Address
+  isMAC48Address,
 };

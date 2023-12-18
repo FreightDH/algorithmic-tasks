@@ -5,10 +5,10 @@ const { NotImplementedError } = require('./not-implemented-error.js');
 const { ListNode } = require('./list-node.js');
 
 module.exports = {
-    checkForThrowingErrors,
-    checkForNotThrowingErrors,
-    CONSTANTS,
-    testOptional,
-    NotImplementedError,
-    ListNode
+  checkForThrowingErrors,
+  checkForNotThrowingErrors,
+  CONSTANTS,
+  testOptional,
+  NotImplementedError,
+  ListNode,
 };

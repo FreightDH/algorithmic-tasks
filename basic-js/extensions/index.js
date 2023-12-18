@@ -4,9 +4,9 @@ const { testOptional } = require('./it-optional.js');
 const { NotImplementedError } = require('./not-implemented-error.js');
 
 module.exports = {
-    checkForThrowingErrors,
-    checkForNotThrowingErrors,
-    CONSTANTS,
-    testOptional,
-    NotImplementedError,
+  checkForThrowingErrors,
+  checkForNotThrowingErrors,
+  CONSTANTS,
+  testOptional,
+  NotImplementedError,
 };

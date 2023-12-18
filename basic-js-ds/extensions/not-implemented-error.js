@@ -7,8 +7,8 @@ class NotImplementedError extends Error {
     super(message);
     this._specialProp = SPECIAL_PROP_VALUE;
   }
-};
+}
 
 module.exports = {
-  NotImplementedError
+  NotImplementedError,
 };

@@ -31,5 +31,5 @@ function testOptional(title, fn, isAsyncTest) {
 }
 
 module.exports = {
-  testOptional
+  testOptional,
 };
